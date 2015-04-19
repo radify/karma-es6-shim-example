@@ -1,3 +1,5 @@
+// Example Gulp file that shows you how to run ES6 tests with Karma and Require
+
 var gulp = require('gulp');
 var karma = require('gulp-karma');
 var to5 = require('gulp-6to5');
@@ -13,8 +15,6 @@ var paths = {
 function build(src, dst) {
     var pipe = gulp.src(src).pipe(to5({ modules: "amd" })), dest = gulp.dest(dst);
     return pipe.pipe(dest);
-//    var pipe = gulp.src(src).pipe(to5({ modules: "amd" })), dest = gulp.dest(dst);
-//    return pipe(dest);
 }
 
 gulp.task('build-src', function() {

@@ -2,7 +2,7 @@
 
 var gulp = require('gulp');
 var karma = require('gulp-karma');
-var to5 = require('gulp-6to5');
+var babel = require('gulp-babel');
 
 var paths = {
     src:      ['src/**.js', 'src/*/**.js'],
@@ -13,7 +13,7 @@ var paths = {
 };
 
 function build(src, dst) {
-    var pipe = gulp.src(src).pipe(to5({ modules: "amd" })), dest = gulp.dest(dst);
+    var pipe = gulp.src(src).pipe(babel({ modules: "amd" })), dest = gulp.dest(dst);
     return pipe.pipe(dest);
 }
 

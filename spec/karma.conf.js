@@ -8,12 +8,18 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine', 'requirejs', 'es6-shim'],
 
-
     // list of files / patterns to load in the browser
     files: [
       'spec/test-main.js', // configuration of require.js
       {pattern: 'build/js/**/*.js', included: false},
       {pattern: 'build/spec/**/*Spec.js', included: false}
+    ],
+
+    plugins: [
+      'karma-es6-shim',
+      'karma-jasmine',
+      'karma-requirejs',
+      'karma-phantomjs-launcher'
     ],
 
     // test results reporter to use

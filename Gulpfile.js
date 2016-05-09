@@ -1,8 +1,8 @@
 // Example Gulp file that shows you how to run ES6 tests with Karma and Require
 
 var gulp = require('gulp');
-var karma = require('gulp-karma');
 var babel = require('gulp-babel');
+var Server = require('karma').Server;
 
 var paths = {
     src:      ['src/**.js', 'src/*/**.js'],
@@ -25,12 +25,12 @@ gulp.task('build-test', function() {
     return build(paths.specSrc, paths.specDest);
 });
 
-gulp.task('test', function() {
-    return gulp.src(['./non-exist.js'])
-        .pipe(karma({
-            configFile: 'spec/karma.conf.js',
-            action: 'run'
-        }));
+// Run the unit tests without any coverage calculations
+gulp.task('test', ['build-src', 'build-test'], function(cb) {
+    new Server({
+        configFile: __dirname + '/spec/karma.conf.js'
+        ,singleRun: true
+    }, cb).start();
 });
 
 gulp.task('build', ['build-src', 'build-test']);

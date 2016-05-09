@@ -4,17 +4,20 @@
   "description": "Example repository to demonstrate the usage of https://github.com/radify/karma-es6-shim",
   "main": "index.js",
   "dependencies": {
-    "angular": "^1.4.7",
-    "angular-mocks": "^1.4.7",
-    "gulp": "^3.9.0",
+    "angular": "^1.4.9",
+    "angular-mocks": "^1.4.9",
+    "gulp": "^3.9.1",
     "gulp-babel": "^5.3.0",
     "gulp-karma": "0.0.5",
-    "karma": "^0.13.11",
-    "karma-es6-shim": "^0.1.3",
-    "karma-jasmine": "~0.3.6",
-    "karma-phantomjs-launcher": "~0.2.1",
-    "karma-requirejs": "^0.2.2",
-    "requirejs": "^2.1.20"
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.22",
+    "karma-es6-shim": "~0.2.3",
+    "karma-jasmine": "~0.3.8",
+    "karma-ng-html2js-preprocessor": "~0.2.2",
+    "karma-phantomjs-launcher": "~1.0.0",
+    "phantomjs-prebuilt": "~2.1.7",
+    "karma-requirejs": "^0.2.1",
+    "requirejs": "^2.1.11"
   },
   "scripts": {
     "test": "gulp test"
@@ -34,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/radify/karma-es6-shim-example/issues"
   },
-  "homepage": "https://github.com/radify/karma-es6-shim-example#readme"
+  "homepage": "https://github.com/radify/karma-es6-shim-example#readme",
+  "devDependencies": {
+    "karma-requirejs": "^0.2.6"
+  }
 }

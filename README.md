@@ -1,5 +1,5 @@
 [![Travis Build Status](https://travis-ci.org/radify/karma-es6-shim-example.svg)](https://travis-ci.org/radify/karma-es6-shim-example?branch=master)
-[![npm version](https://badge.fury.io/js/karma-es6-shim.svg)](https://www.npmjs.com/package/karma-es6-shim-example)
+[![npm version](https://badge.fury.io/js/karma-es6-shim-example.svg)](https://www.npmjs.com/package/karma-es6-shim-example)
 [![Dependency Status](https://david-dm.org/radify/karma-es6-shim-example.svg)](https://david-dm.org/radify/karma-es6-shim-example)
 
 # karma-es6-shim-example

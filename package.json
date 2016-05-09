@@ -1,6 +1,6 @@
 {
   "name": "karma-es6-shim-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Example repository to demonstrate the usage of https://github.com/radify/karma-es6-shim",
   "main": "index.js",
   "dependencies": {

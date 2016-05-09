@@ -16,8 +16,8 @@ Object.keys(window.__karma__.files).forEach(function(file) {
 
 require.config({
   paths: {
-    angular: "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.6/angular.min",
-    angularMocks: "//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-mocks"
+    angular: "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min",
+    angularMocks: "//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-mocks"
   },
   shim: {
     'angular': {'exports': 'angular'},
